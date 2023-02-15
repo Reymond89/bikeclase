@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+        <header>
+            <nav class="header__container">
+                <picture class="header__picture-left">
+                    <img class="logo" src="assets/img/logo.png" alt="">
+                </picture>
+                <button class="header__button-right">Test Drive</button>
+            </nav>
+        </header>
+        <main>
+            <section class="banner__container">
+                <h3 class="banner__subtitle">THE BMW</h3>
+                <h1 class="banner__title">G 310 R</h1>
+                <p class="banner__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore praesentium quidem sunt commodi fuga odio a modi voluptate vero animi.</p>
+                <h4 class="banner__choose">Choose your color</h4>
+                <div class="banner__select">
+                    <span class="bike__red"></span>
+                    <span class="bike__blue"></span>
+                    <span class="bike__black"></span>
+                </div>
+            </section>
+        </main>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        const bikeRed = document.querySelector('.bike__red');
+        const bikeBlue = document.querySelector('.bike__blue');
+        const bikeblack = document.querySelector('.bike__black');
+        const background = document.querySelector('.background');
+
+        bikeRed.onclick = function(){
+            background.style.backgroundImage = 'url(assets/img/BMW1.png)'
+        }
+        bikeBlue.onclick = function(){
+            background.style.backgroundImage = 'url(assets/img/BMW2.png)'
+        }
+        bikeblack.onclick = function(){
+            background.style.backgroundImage = 'url(assets/img/BMW3.png)'
+        }
+
+
+    </script>
+</body>
+</html>
